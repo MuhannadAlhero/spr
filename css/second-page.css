@@ -1,0 +1,228 @@
+/* import arabic font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+/*  import english font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --Arabic-font: "IBM Plex Sans Arabic", sans-serif;
+    --Arabic-second-font: "Almarai", sans-serif;
+    --English-font: "Roboto Mono", monospace;
+    --bg-color: #F5F5F5;
+    --gray-secondry-color: #E7E7E9;
+    --gray-color: #7B7B7B;
+    --Primary-color: #007F66;
+    --Secondry-color: #01997B;
+
+}
+body,html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--Arabic-second-font);
+    
+
+}
+
+/* Start Nav-bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding: 1em 2em;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    margin-left: auto;
+    max-width: 30em;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    color: var(--Primary-color);
+    font-family: var(--Arabic-second-font);
+    font-size: 1.1em;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: rgb(90, 88, 88);
+    padding: 14px 13px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.dropdown i {
+    margin: 0 0.4em;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    transition: .4s;
+    background-color: var(--icon-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--Primary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropbtn {
+    display: flex;
+}
+
+#lanugag-text {
+    color: var(--Secondry-color);
+    font-family: var(--Arabic-second-font);
+}
+
+/* Show the dropdown menu on hover */
+.nav-links li:last-child::after {
+    content: "|";
+    margin-right: 0.5rem;
+    color: #000000;
+    /* غير اللون حسب خلفيتك */
+}
+
+.humbrger-icon {
+    color: black;
+    display: none;
+    cursor: pointer;
+
+}
+nav ul li a:hover {
+    color: var(--gray-color);
+}
+
+@media (max-width: 800px) {
+    nav ul li a {
+        font-size: 1em;
+
+    }
+
+    nav {
+        padding: 1em 0.4em;
+
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        padding: 3em;
+    }
+
+    .humbrger-icon {
+        display: block;
+        margin: 0 1.5em;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    nav ul {
+        max-width: 300px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #c5c5c5;
+        display: none;
+
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+
+/* شغل الي فوق كله حق navbar-with responsive */
+/* ---------------------------------------- */
+/* Start Section Hero */
+.hero-section {
+
+    background-image: url(/img/Hero\ Section.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--Arabic-second-font);
+    direction: rtl;
+}
+
+.hero-section .hero-content {
+    max-width: 800px;
+    
+}
+.hero-section h1 {
+    font-size: 7em;
+    color: var(--Primary-color);
+    line-height: 1;
+    margin-left: 15em;
+}
+/*  */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        width: 100%;
+        max-width: 250px;
+
+    }
+    .hero-section h1 {
+        text-align: center;
+    }
+}
