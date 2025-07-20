@@ -9,6 +9,7 @@ menuIcon.addEventListener("click", () => {
     navLinks.classList.add("active");
     menuIcon.style.display = "none";
     closeIcon.style.display = "inline-block";
+    
 });
 
 closeIcon.addEventListener("click", () => {
