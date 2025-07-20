@@ -389,6 +389,18 @@ nav ul li a:hover {
 }
 
 /* anmation vision section */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+/* بعد التفعيل */
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* البداية: القسم مخفي */
 /* --------------------------------- */
 /* value قيمنا  */
