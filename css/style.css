@@ -202,7 +202,7 @@ nav ul li a:hover {
     justify-content: center;
     min-height: 100vh;
     font-family: var(--Arabic-second-font);
-    direction: rtl;
+    
 }
 
 .hero-section .hero-content {
@@ -232,6 +232,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     margin-top: 3em;
     max-width: 100%;
+    direction: rtl;
 }
 
 .hero-info ul {
@@ -346,6 +347,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
     line-height: 1.7;
     color: var(--Secondry-color);
+    font-weight: 700;
 }
 
 .vision.reverse {
@@ -407,6 +409,7 @@ nav ul li a:hover {
 
     text-align: center;
     padding: 4em 2em;
+    margin-top: 4em;
 }
 
 .values-title {
