@@ -53,3 +53,4 @@ window.addEventListener('scroll', () => {
     });
 });
 // ---------------
+// language from (chat-gpt)

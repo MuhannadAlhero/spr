@@ -241,6 +241,19 @@ nav ul li a:hover {
     font-family: var(--Arabic-second-font);
 
 }
+/* anmation vision section */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+/* بعد التفعيل */
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .cards-info {
     display: grid;
