@@ -21,24 +21,29 @@
         <nav class=" navbar slide-down">
             <img src="/img/LOGO.png" class="logo" href="home.html" alt="#">
             <ul class="nav-link " id="menulist">
-                <li><a href="#footer-id" class="a-link">تواصل معنا</a></li>
-                <li><a href="#" class="a-link">شركاؤنا</a></li>
-                <li><a href="#" class="a-link">عملأونا</a></li>
-                <li><a href="#" class="a-link">اعمالنا</a></li>
-                <li><a href="ourWork.html" class="a-link"> خدماتنا</a></li>
-                <li><a href="#work-section-id" class="a-link">من نحن</a></li>
-                <li><a href="home.html" class="a-link">الرئيسية</a></li>
+                <li><a href="home.html" class="a-link" data-i18n="home-page">الرئيسية</a></li>
+                <li><a href="#work-section-id" class="a-link" data-i18n="who-arewe?">من نحن</a></li>
+                <li><a href="ourWork.html" class="a-link" data-i18n="our-services"> خدماتنا</a></li>
+                <li><a href="#" class="a-link" data-i18n="our-business">اعمالنا</a></li>
+                <li><a href="#" class="a-link" data-i18n="our-customers">عملاؤنا</a></li>
+                <li><a href="#" class="a-link" data-i18n="our-partnier">شركاؤنا</a></li>
+                <li><a href="#footer-id" class="a-link" data-i18n="call-us">تواصل معنا</a></li>
             </ul>
             <div class="dropdown">
                 <button class="dropbtn" id="lang-btn">
-                    <p id="lanugag-text">اللغة</p>
+                    <p id="lanugag-text" data-i18n="language-translte">اللغة</p>
                     <i class="fa fa-caret-down"></i>
                 </button>
 
                 <div class="dropdown-content" id="lang-menu">
-                    <a href="#" id="Arabic-language">Arabic</a>
-                    <a href="#" id="English-language">English</a>
-                    <a href="#">Spain</a>
+                    <a href="#" id="Arabic-language" data-i18n="arabic-lang">Arabic</a>
+                    <a href="#" id="English-language" data-i18n="english-lang">English</a>
+                    <a href="#" data-i18n="spain-lang">Spain</a>
+                    <a href="#" data-i18n="french-lang">French</a>
+                    <a href="#" data-i18n="chinese-lang">Chinese</a>
+                    <a href="#" data-i18n="korean-lang">Korean</a>
+                    <a href="#" data-i18n="portuguese-lang">Portuguese</a>
+                    <a href="#" data-i18n="japanese-lang">Japanese</a>
                 </div>
             </div>
             <div class="humbrger-icon">
@@ -50,7 +55,7 @@
     <!-- End Nav-bar  -->
     <!-- --------- -->
     <!-- Section Hero -->
-    <section class="hero-section" >
+    <section class="hero-section">
         <div class="hero-content">
             <h1 id="hero-section-inourwork">خدماتـــنا</h1>
         </div>
@@ -161,8 +166,8 @@
             </div>
         </div>
     </section>
+    <script src="/javascript/translte.js"></script>
     <script src="/javascript/script.js">
-
     </script>
 </body>
 
