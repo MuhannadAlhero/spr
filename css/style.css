@@ -15,36 +15,27 @@
     --Secondry-color: #01997B;
 
 }
-body,html {
+
+body,
+html {
     scroll-behavior: smooth;
 }
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     font-family: var(--Arabic-second-font);
-    
+
 
 }
-/* لما تكون اللغة عربية */
-body.rtl nav {
-    flex-direction: row-reverse;
-}
 
-body.rtl .logo {
-    margin-left: auto;
-    margin-right: 0;
-}
-.body.rtl .hero-box  {
-        direction: rtl;
-
-}
 /* Start Nav-bar */
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row-reverse;
     padding: 1em 2em;
     background-color: var(--bg-color);
@@ -55,9 +46,17 @@ nav {
     max-width: 30em;
 }
 
+/* لما تكون الصفحة RTL */
+html[dir="rtl"] .logo {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+
 nav ul {
     display: flex;
     gap: 1.5em;
+    flex-direction: row-reverse;
 }
 
 nav ul li a {
@@ -214,7 +213,7 @@ nav ul li a:hover {
     justify-content: center;
     min-height: 100vh;
     font-family: var(--Arabic-second-font);
-    
+
 }
 
 .hero-section .hero-content {
@@ -244,7 +243,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     margin-top: 3em;
     max-width: 100%;
-
+    direction: rtl;
 }
 
 .hero-info ul {
