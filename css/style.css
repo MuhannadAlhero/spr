@@ -63,8 +63,28 @@ nav ul li a {
     color: var(--Primary-color);
     font-family: var(--Arabic-second-font);
     font-size: 1.1em;
+    position: relative;
+    display: inline-block;
+
+}
+.a-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    background-color: var(--Primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s ease;
+    width: 100%;
+    
 }
 
+.a-link:hover::after {
+    transform: scaleX(1);
+
+}
 /* Dropdown button */
 .dropdown .dropbtn {
     font-size: 16px;
@@ -76,12 +96,13 @@ nav ul li a {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    margin-right: 2em;
+    margin:0 1.5em;
     cursor: pointer;
 }
 
 .dropdown i {
     margin: 0 0.4em;
+    margin: 0 0.6em;
 }
 
 .navbar a:hover,
