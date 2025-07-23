@@ -183,7 +183,7 @@ nav ul li a:hover {
         top: 78px;
         left: 0;
         right: 0;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         background: #c5c5c5;
         display: none;
@@ -372,7 +372,7 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        padding: 2rem 1rem;
+        
     }
 
     .img-vision img {
@@ -485,7 +485,7 @@ nav ul li a:hover {
     justify-content: space-between;
     padding: 3em;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+
 }
 
 .right-col {
@@ -497,6 +497,7 @@ nav ul li a:hover {
 
 .right-col p {
     margin: 2em 0;
+    max-width: 400px
 }
 
 .soical {
@@ -527,9 +528,9 @@ nav ul li a:hover {
 .footer-column p {
     margin: 10px 0;
     display: flex;
-    align-items: center;
     gap: 10px;
-    font-size: 14px;
+
+    
 }
 
 .footer-column a {
