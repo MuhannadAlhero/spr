@@ -223,7 +223,8 @@ nav ul li a:hover {
 /* Start Section Hero */
 .hero-section {
 
-    background-image: url(./img/hero-section.png);
+     background-image: url(./img/Hero\ Section.png);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
