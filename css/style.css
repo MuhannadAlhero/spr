@@ -192,7 +192,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
- 
+
     nav ul li {
         padding: 1em;
     }
@@ -224,7 +224,7 @@ nav ul li a:hover {
     }
 
     @media (max-width: 400px) {
-        
+
         nav ul li a {
             font-size: 1em;
         }
@@ -255,7 +255,7 @@ nav ul li a:hover {
 /* Start Section Hero */
 .hero-section {
 
-    background-image: url("../img/hero-section.png");
+    background-image: url("../idocs/hero-section.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,7 +421,7 @@ nav ul li a:hover {
 
 /* Res */
 @media (max-width: 768px) {
-    
+
     .text-vision h1 {
         font-size: 0.9em;
     }
@@ -444,7 +444,7 @@ nav ul li a:hover {
         flex-direction: row;
         gap: 2em;
         padding: 1.5em;
-        
+
     }
 
     .img-vision img {
@@ -492,6 +492,7 @@ nav ul li a:hover {
         flex-direction: row;
     }
 }
+
 @media (max-width: 518px) {
     .vision {
         display: flex;
