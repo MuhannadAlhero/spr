@@ -44,7 +44,8 @@ nav {
 
 .logo {
     margin-left: auto;
-    max-width: 30em;
+    max-width: 9em;
+    cursor: pointer;
 }
 
 /* لما تكون الصفحة RTL */
@@ -168,7 +169,9 @@ nav ul li a:hover {
     color: var(--gray-color);
 }
 
+
 @media (max-width: 800px) {
+
     nav ul li a {
         font-size: 1em;
     }
@@ -189,6 +192,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+ 
     nav ul li {
         padding: 1em;
     }
@@ -220,6 +224,7 @@ nav ul li a:hover {
     }
 
     @media (max-width: 400px) {
+        
         nav ul li a {
             font-size: 1em;
         }
@@ -250,7 +255,7 @@ nav ul li a:hover {
 /* Start Section Hero */
 .hero-section {
 
-    background-image: url(/img/Hero\ Section.png);
+    background-image: url("/img/hero-section.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -427,7 +432,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 568px) {
-
+    body {
+        max-width: 560px;
+    }
 
     .vision {
         display: flex;
@@ -436,12 +443,12 @@ nav ul li a:hover {
         justify-content: space-between;
         flex-direction: row;
         gap: 2em;
-        padding: 1em;
+        padding: 1.5em;
         
     }
 
     .img-vision img {
-        max-width: 300px;
+        max-width: 260px;
 
     }
 
@@ -459,6 +466,32 @@ nav ul li a:hover {
 
 }
 
+@media (max-width: 518px) {
+    .vision {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .img-vision {
+        max-width: 100%;
+
+    }
+
+    .text-vision h2 {
+        font-size: 1.4em;
+    }
+
+    .works p {
+        font-size: 0.9em;
+    }
+
+    .vision.reverse {
+        flex-direction: row;
+    }
+}
 @media (max-width: 518px) {
     .vision {
         display: flex;

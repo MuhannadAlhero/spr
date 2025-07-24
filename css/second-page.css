@@ -226,7 +226,7 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-.box i {
+.box img{
     background-color: #003228;
     padding: 0.5em;
     color: white;
@@ -260,6 +260,7 @@ nav ul li a:hover {
     background-color: var(--Primary-color);
     color: white;
     border-radius: 50px;
+    
 
 }
 
