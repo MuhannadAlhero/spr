@@ -210,8 +210,8 @@ nav ul li a:hover {
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
     border-radius: 20px;
-
-
+    
+    
 }
 
 .box:hover {
@@ -247,7 +247,7 @@ nav ul li a:hover {
 }
 
 .box a {
-
+    
     padding: 1.4em 2.5em;
     background-color: var(--Primary-color);
     color: white;
