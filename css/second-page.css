@@ -172,6 +172,14 @@ nav ul li a:hover {
     }
 
 }
+@media (max-width: 480px) {
+    #hero-section-inourwork {
+        
+       
+        margin-right: 4em;
+    }
+
+}
 
 /*------------------------------------------------------------------- */
 /* خدامتنا box */
