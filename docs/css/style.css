@@ -44,7 +44,7 @@ nav {
 
 .logo {
     margin-left: auto;
-    max-width: 9em;
+    max-width: 5em;
     cursor: pointer;
 }
 
@@ -192,7 +192,8 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
- 
+
+
     nav ul li {
         padding: 1em;
     }
@@ -224,7 +225,7 @@ nav ul li a:hover {
     }
 
     @media (max-width: 400px) {
-        
+
         nav ul li a {
             font-size: 1em;
         }
@@ -334,6 +335,7 @@ nav ul li a:hover {
 
 /* For REAPONSIV */
 @media (max-width: 768px) {
+
     .hero-info ul {
         flex-direction: column;
         align-items: center;
@@ -344,7 +346,27 @@ nav ul li a:hover {
         width: 100%;
         max-width: 250px;
     }
+
+    .hero-content p {
+        font-size: 1em;
+
+    }
+
+    .hero-content h1 {
+        font-size: 3.3em;
+    }
+
+    .hero-info li {
+        max-width: 200px;
+        min-width: 80px;
+        display: grid;
+        
+    }
+    
+
+
 }
+
 
 /* ------------------------------------- */
 /* Section Abou us */
@@ -421,7 +443,7 @@ nav ul li a:hover {
 
 /* Res */
 @media (max-width: 768px) {
-    
+
     .text-vision h1 {
         font-size: 0.9em;
     }
@@ -444,7 +466,7 @@ nav ul li a:hover {
         flex-direction: row;
         gap: 2em;
         padding: 1.5em;
-        
+
     }
 
     .img-vision img {
@@ -492,6 +514,7 @@ nav ul li a:hover {
         flex-direction: row;
     }
 }
+
 @media (max-width: 518px) {
     .vision {
         display: flex;
@@ -592,6 +615,14 @@ nav ul li a:hover {
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .values-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /*  */
 

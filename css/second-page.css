@@ -21,6 +21,10 @@
 body,
 html {
     scroll-behavior: smooth;
+
+}
+body {
+
 }
 
 * {
@@ -136,7 +140,7 @@ nav ul li a:hover {
 /* Start Section Hero */
 .hero-section {
 
-    background-image: url(/img/Hero\ Section.png);
+    background-image: url("../img/hero-section.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,19 +151,16 @@ nav ul li a:hover {
     justify-content: center;
     min-height: 100vh;
     font-family: var(--Arabic-second-font);
-    direction: rtl;
-}
-
-.hero-section .hero-content {
-    max-width: 800px;
 
 }
+
+
 
 .hero-section h1 {
     font-size: 7em;
     color: var(--Primary-color);
     line-height: 1;
-    margin-left: 15em;
+    
 }
 
 /*  */
@@ -169,14 +170,15 @@ nav ul li a:hover {
         flex-direction: column;
         margin-bottom: 1em;
         margin-right: 2em;
+        
     }
-
+    .hero-content {
+        text-align: center;
+    }
 }
 @media (max-width: 480px) {
     #hero-section-inourwork {
-        
-       
-        margin-right: 4em;
+        text-align: center;
     }
 
 }
@@ -286,5 +288,8 @@ nav ul li a:hover {
 
     .box p {
         font-size: 1em;
+    }
+    .hero-section {
+        width: 100%;
     }
 }
