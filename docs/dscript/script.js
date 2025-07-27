@@ -512,4 +512,3 @@ document.querySelector('[data-i18n="portuguese-lang"]').addEventListener("click"
 document.querySelector('[data-i18n="japanese-lang"]').addEventListener("click", () => applyTranslation("ja"));
 
 // Start with Arabic by default
-applyTranslation("ar");

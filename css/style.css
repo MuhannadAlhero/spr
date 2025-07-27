@@ -199,12 +199,12 @@ nav ul li a:hover {
 
 
     nav ul li {
-        padding: 1em;
+        padding: 3em;
     }
 
     .humbrger-icon {
         display: block;
-        margin: 0 1.5em;
+        margin: 0 0.5em;
         font-size: 1.8rem;
         cursor: pointer;
         z-index: 1000;

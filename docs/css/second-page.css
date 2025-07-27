@@ -173,11 +173,10 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     #hero-section-inourwork {
         flex-direction: column;
-        margin-bottom: 1em;
-        margin-right: 2em;
         
     }
     .hero-content {
+        font-size: .8em;
         text-align: center;
     }
 }
