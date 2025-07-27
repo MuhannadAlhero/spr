@@ -112,6 +112,11 @@ nav ul li a:hover {
         cursor: pointer;
         z-index: 1000;
     }
+    
+    .logo {
+        max-width: 4em;
+    }
+
 
     #close-icon {
         display: none;

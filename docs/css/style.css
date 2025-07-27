@@ -193,6 +193,9 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
 
+    .logo {
+        max-width: 4em;
+    }
 
     nav ul li {
         padding: 1em;

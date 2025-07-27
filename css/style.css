@@ -180,6 +180,10 @@ nav ul li a:hover {
         padding: 1em 0.4em;
 
     }
+    
+    .logo {
+        max-width: 4em;
+    }
 
     .logo {
         max-width: 100px;

@@ -104,6 +104,11 @@ nav ul li a:hover {
         padding: 3em;
     }
 
+    
+    .logo {
+        max-width: 4em;
+    }
+
     .humbrger-icon {
         display: block;
         margin: 0 1.5em;
