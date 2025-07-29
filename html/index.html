@@ -19,7 +19,7 @@
         <!-- Nav bar -->
         <header>
             <nav class="navbar slide-down">
-                <img src="/img/logo1.png"  class="logo" alt="#">
+                <a href="index.html" class="logo"><img src="/img/logo1.png" class="logo" alt="#"></a>
                 <ul class="nav-link " id="menulist">
                     <li><a href="index.html" class="a-link" data-i18n="home-page">الرئيسية</a></li>
                     <li><a href="#work-section-id" class="a-link" data-i18n="who-arewe?">من نحن</a></li>
@@ -141,14 +141,59 @@
                 </div>
             </div>
         </section>
+        <!-- Contact Section -->
+        <section>
+            <div id="contact"></div>
+            <div class="contact-form" data-aos="fade-up">
+                <h2 id="contact-title" data-i18n="contact.title">تواصــل معنــا</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label" id="label-email" data-i18n="contact.email">البريد
+                            الالكتروني<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="example@email.com" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label" id="label-name" data-i18n="contact.name">الاسم<span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" data-i18n-placeholder="placeholder.name" placeholder="اكتب اسمك هنا" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label" id="label-phone" data-i18n="contact.phone">رقم الجوال<span
+                                class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" id="phone"  placeholder="+966550000000" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label" id="label-subject"
+                            data-i18n="contact.subject">العنوان<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" data-i18n-placeholder="placeholder.subject" placeholder="عنوان الرســالة" required />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="form-label" id="label-message"
+                            data-i18n="contact.message">الرسالة<span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" rows="5" data-i18n-placeholder="placeholder.message"  placeholder="اكتب رسالتك هنا..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn w-100" id="contact-btn" data-i18n="contact.button">تواصــل
+                        معنــا</button>
+                </form>
+            </div>
+
+        </section>
         <section class="footer" id="footer-id">
             <div class="right-col">
-                <img src="/img/logo.png" class="logo" alt="#">
+                <a href="#hero-section" class="logo"><img src="/img/logo1.png" class="logo" alt="#"></a>
                 <p data-i18n="footer-lang-aboutus">مكان نصنع به مجتمعات في كافيه في مجالات لنكتشف و نطور و نقوي من
                     خلاله المواهب الجديده.</p>
                 <div class="soical">
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="left-col">

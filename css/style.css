@@ -10,7 +10,7 @@
     --English-font: "Roboto Mono", monospace;
     --bg-color: #F5F5F5;
     --gray-secondry-color: #E7E7E9;
-    --gray-color: #7B7B7B;
+    --gray-color: #E7E7E9;
     --Primary-color: #007F66;
     --Secondry-color: #01997B;
 
@@ -19,11 +19,13 @@
 body,
 html {
     scroll-behavior: smooth;
+    background-color: var(--gray-color);
 }
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: var(--Arabic-second-font);
@@ -39,7 +41,7 @@ nav {
     flex-direction: row-reverse;
     padding: 1em 2em;
     background-color: var(--bg-color);
-
+    width: 100%;
 }
 
 .logo {
@@ -180,7 +182,7 @@ nav ul li a:hover {
         padding: 1em 0.4em;
 
     }
-    
+
     .logo {
         max-width: 4em;
     }
@@ -229,6 +231,10 @@ nav ul li a:hover {
     }
 
     @media (max-width: 400px) {
+
+        nav {
+            position: static;
+        }
 
         nav ul li a {
             font-size: 1em;
@@ -364,9 +370,9 @@ nav ul li a:hover {
         max-width: 200px;
         min-width: 80px;
         display: grid;
-        
+
     }
-    
+
 
 
 }
@@ -627,19 +633,84 @@ nav ul li a:hover {
     }
 }
 
+/* Section form */
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--Primary-color);
+}
+
+.form-label {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+
+}
+
+.text-danger {
+    color: red;
+}
+
+.form-control {
+    width: 30em;
+    border-radius: 10px;
+    padding: 1em;
+    border: 1px solid rgb(188, 188, 188);
+    align-items: center;
+
+}
+
+.form-control::placeholder {
+    color: #D0D0D0;
+    opacity: 1;
+
+}
+
+.btn {
+    background-color: var(--Primary-color);
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    width: 22em;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background-color: var(--Primary-color);
+    color: #fff;
+}
+
+
 
 /*  */
 
 /* _----------------------------------------------------------- */
 /* Start footer */
 .footer {
-    margin-top: 20em;
-    background-color: rgb(230, 230, 230);
+    margin-top: 10em;
+    background-color: rgb(191, 191, 191);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
     padding: 3em;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 
 }
 

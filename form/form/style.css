@@ -1,0 +1,43 @@
+
+/* Contact Form */
+.contact-form {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.form-label {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.form-control::placeholder {
+  color: #D0D0D0;
+  opacity: 1;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}

@@ -467,14 +467,157 @@ const translate = {
         ja: "プライバシーポリシー",
         zh: "隐私政策",
         pt: "Política de privacidade"
+    },
+    "contact": {
+        "title": "تواصــل معنــا",
+        "email": {
+            "label": "البريد الالكتروني"
+        },
+        "name": {
+            "label": "الاسم",
+            "placeholder": "اكتب اسمك هنا"
+        },
+        "phone": {
+            "label": "رقم الجوال"
+        },
+        "subject": {
+            "label": "العنوان",
+            "placeholder": "عنوان الرســالة"
+        },
+        "message": {
+            "label": "الرسالة",
+            "placeholder": "اكتب رسالتك هنا..."
+        },
+        "button": "تواصــل معنــا"
+    },
+    "contact.title": {
+        ar: "تواصــل معنــا",
+        en: "Contact Us",
+        fr: "Contactez-nous",
+        es: "Contáctanos",
+        ja: "お問い合わせ",
+        ko: "문의하기",
+        zh: "联系我们",
+        pt: "Contate-nos"
+    },
+    "contact.email": {
+        ar: "البريد الالكتروني",
+        en: "Email",
+        fr: "E-mail",
+        es: "Correo electrónico",
+        ja: "メール",
+        ko: "이메일",
+        zh: "电子邮件",
+        pt: "E-mail"
+    },
+    "contact.name": {
+        ar: "الاسم",
+        en: "Name",
+        fr: "Nom",
+        es: "Nombre",
+        ja: "名前",
+        ko: "이름",
+        zh: "姓名",
+        pt: "Nome"
+    },
+    "contact.phone": {
+        ar: "رقم الجوال",
+        en: "Phone",
+        fr: "Téléphone",
+        es: "Teléfono",
+        ja: "電話番号",
+        ko: "전화번호",
+        zh: "手机号码",
+        pt: "Telefone"
+    },
+    "contact.subject": {
+        ar: "العنوان",
+        en: "Subject",
+        fr: "Sujet",
+        es: "Asunto",
+        ja: "件名",
+        ko: "제목",
+        zh: "主题",
+        pt: "Assunto"
+    },
+    "contact.message": {
+        ar: "الرسالة",
+        en: "Message",
+        fr: "Message",
+        es: "Mensaje",
+        ja: "メッセージ",
+        ko: "메시지",
+        zh: "留言",
+        pt: "Mensagem"
+    },
+    "contact.button": {
+        ar: "تواصــل معنــا",
+        en: "Send Message",
+        fr: "Envoyer le message",
+        es: "Enviar mensaje",
+        ja: "メッセージ送信",
+        ko: "메시지 보내기",
+        zh: "发送信息",
+        pt: "Enviar mensagem"
+    },
+    "placeholder.email": {
+        ar: "example@email.com",
+        en: "example@email.com",
+        fr: "exemple@email.com",
+        es: "ejemplo@email.com",
+        ja: "例@email.com",
+        ko: "예시@email.com",
+        zh: "示例@email.com",
+        pt: "exemplo@email.com"
+    },
+    "placeholder.name": {
+        ar: "اكتب اسمك هنا",
+        en: "Enter your name",
+        fr: "Entrez votre nom",
+        es: "Ingresa tu nombre",
+        ja: "名前を入力",
+        ko: "이름을 입력하세요",
+        zh: "输入您的姓名",
+        pt: "Digite seu nome"
+    },
+    "placeholder.phone": {
+        ar: "+966550000000",
+        en: "+966550000000",
+        fr: "+966550000000",
+        es: "+966550000000",
+        ja: "+966550000000",
+        ko: "+966550000000",
+        zh: "+966550000000",
+        pt: "+966550000000"
+    },
+    "placeholder.subject": {
+        ar: "عنوان الرســالة",
+        en: "Message subject",
+        fr: "Objet du message",
+        es: "Asunto del mensaje",
+        ja: "メッセージの件名",
+        ko: "메시지 제목",
+        zh: "信息主题",
+        pt: "Assunto da mensagem"
+    },
+    "placeholder.message": {
+        ar: "اكتب رسالتك هنا...",
+        en: "Write your message here...",
+        fr: "Écrivez votre message ici...",
+        es: "Escribe tu mensaje aquí...",
+        ja: "メッセージをここに入力してください...",
+        ko: "여기에 메시지를 작성하세요...",
+        zh: "在此处输入您的留言...",
+        pt: "Escreva sua mensagem aqui..."
     }
-
 };
 
 
 function applyTranslation(lang) {
+    const placeholders = document.querySelectorAll("[data-i18n-placeholder]");
     document.querySelectorAll("[data-i18n]").forEach(elem => {
         const key = elem.getAttribute("data-i18n");
+
         const translation = translate[key]?.[lang];
 
         if (translation) {
@@ -488,6 +631,14 @@ function applyTranslation(lang) {
             }
         }
     });
+    placeholders.forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (translations[key] && translations[key][lang]) {
+            el.setAttribute("placeholder", translations[key][lang]);
+        }
+    });
+
+
 
     // حفظ اللغة
     localStorage.setItem("selectedLang", lang);
