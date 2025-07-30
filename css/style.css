@@ -41,7 +41,7 @@ nav {
     flex-direction: row-reverse;
     padding: 1em 2em;
     background-color: var(--bg-color);
-    width: 100%;
+    
 }
 
 .logo {
@@ -168,7 +168,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--gray-color);
+    color: #004335;
 }
 
 
@@ -363,6 +363,8 @@ nav ul li a:hover {
     }
 
     .hero-content h1 {
+        margin: 0;
+        
         font-size: 3.3em;
     }
 

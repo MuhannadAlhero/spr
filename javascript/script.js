@@ -631,12 +631,6 @@ function applyTranslation(lang) {
             }
         }
     });
-    placeholders.forEach(el => {
-        const key = el.getAttribute("data-i18n-placeholder");
-        if (translations[key] && translations[key][lang]) {
-            el.setAttribute("placeholder", translations[key][lang]);
-        }
-    });
 
 
 

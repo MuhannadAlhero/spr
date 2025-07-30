@@ -476,10 +476,6 @@ function applyTranslation(lang) {
         document.documentElement.lang = lang; // داخل applyTranslation
 
     });
-    const h1 = document.getElementById("hero-section-inourwork");
-    if (h1) {
-        h1.style.fontSize = lang !== "ar" ? "4.5em" : "4em";
-    }
-
+    
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 }

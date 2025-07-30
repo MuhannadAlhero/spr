@@ -222,6 +222,11 @@ nav ul li a:hover {
 }
 
 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 30em;
+
     padding: 3em;
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
@@ -258,7 +263,7 @@ nav ul li a:hover {
 .box p {
     line-height: 1.7;
     margin-bottom: 2em;
-    color: var(--gray-color);
+    color: var(--for-box-card);
     font-size: 1.1em;
 }
 
@@ -268,7 +273,8 @@ nav ul li a:hover {
     background-color: var(--Primary-color);
     color: white;
     border-radius: 50px;
-    
+    margin-top: auto;
+    align-self: flex-start;
 
 }
 
